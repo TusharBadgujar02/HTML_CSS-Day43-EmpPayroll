@@ -91,11 +91,25 @@
             border-radius: 4px;
             resize: vertical;
         }
+        .profile-radio-content {
+            display:flex;
+            flex-direction: row;
+        }
+        .profile-radio-content > label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .profile {
+            width: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
     </style>    
     <body>
         <header class="header-content header">
             <div class="logo-content">
-                <img src="\C:\Users\cheta\Downloads\logo.png" alt="">
+                <img src="C:\Users\cheta\Downloads\FS HTML_CSS LP01 assets\assets fav.png" alt="">
                 <div>
                     <span class="emp-text">EMPLOYEE</span>
                     <span class="emp-text emp-payroll">PAYROLL</span>
@@ -112,6 +126,29 @@
                     <input class="input" type="text" id="name"
                     name="name" placeholder="Your Name..." required>
                 </div>
+                <div class="row-content">
+                    <label class="label text" for="profile">Profile Image</label>
+                    <div class="profile-radio-content">
+                        <label>
+                            <input type="radio" id="profile1" name="profile"
+                            value="" required>
+                            <img class="profile" id="image1" src="">
+                        </label>
+                        <label>
+                            <input type="radio" id="profile2" name="profile"
+                            value="" required>
+                            <img class="profile" id="image2" src="">
+                        </label>
+                        <label>
+                            <input type="radio" id="profile3" name="profile"
+                            value="" required>
+                            <img class="profile" id="image3" src="">
+                        </label><label>
+                            <input type="radio" id="profile4" name="profile"
+                            value="" required>
+                            <img class="profile" id="image4" src="">
+                        </label>
+                    </div>
             </form>
         </header>
     </body>
